@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+}
+
+/* Screens */
+.screen {
+  display: none;
+  padding: 30px;
+}
+
+.screen.active {
+  display: block;
+}
+
+/* Welcome */
+#welcome ul {
+  list-style: none;
+  padding: 0;
+}
+
+#welcome li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 22px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ffcc00;
+  cursor: pointer;
+  margin: 8px;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+/* Grid */
+.grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.grid img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.3s;
+}
+
+/* Selected image FRONT */
+.grid img.active {
+  border-color: #ffcc00;
+  transform: scale(1.12);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+  z-index: 10;
+}
+
+/* Dim others */
+.grid img.dim {
+  opacity: 0.4;
+}
+
+/* Quiz box */
+#quizBox {
+  width: 40%;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 12px;
+  display: none;
+}
+
+#quizImage {
+  width: 200px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Options */
+#options button {
+  display: block;
+  width: 100%;
+  background: #2a5298;
+  color: white;
+  border: 2px solid transparent;
+}
+
+#options button.selected {
+  background: white;
+  color: black;
+  border: 2px solid #ffcc00;
+}
+
+/* Popup */
+#popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  padding: 12px 25px;
+  border-radius: 8px;
+  display: none;
+}

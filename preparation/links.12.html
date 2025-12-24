@@ -1,0 +1,110 @@
+<!--<a> tag defines a hyperlink </a>
+link to an email address-->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<h2> link to an email address</h2>
+<p> to create a link</p>
+<p><a href="mailto:durga@gmail.com">send email</a></p>
+
+    
+</body>
+</html>
+
+<!--button as a link-->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h2> button as  a links</h2>
+<p> click the button to go to the html</p>
+<button on click="document.location='default.asp'">
+    html tutorial</button>
+
+</body>
+</html>
+
+
+<!--link titles
+specifies extra information about an element.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h2> link titles</h2>
+<p>the title attributes specifies extra information</p>
+ <a href ="https://www.w3shools.com/html/"title="go to w3 schools HTML">visit our html tutorial</a>   
+</body>
+</html>
+
+<!--links- different colors
+
+Actuslly all browsers 
+unvisited link underlined and blue
+visited link underlined and purple
+active link underlined and red-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+a:link {
+    color : green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: unerline;
+}
+</style>
+</head>
+<body>
+    <h2> link colors</h2>
+    <p> change default color links</p>
+    <a href="html_images.asp"target="blank">html pages</a>
+
+</body>
+</html>
+
+<!--linkk button 
+a link button styled as a button by using css-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+
+}
+a:hover, a:active {
+    background-color: green;
+
+}
+</style>
+</head>
+<body>
+<h2> link button</h2>
+<p> a link styled as a button</p>
+<a href="default.asp" target="_blank"> this is a link</a>   
+</body>
+</html>

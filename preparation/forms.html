@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+
+<!--html text input-->
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2> Text input fields</h2>
+  <form>
+    <label for="fname">first name:</label><br>
+    <input type="text" id="fname" name="fname" value="john"><br>
+    <label for="lname">last name:</label><br>
+    <input type="text" id="lnamee" name="lname" value="Doe">
+  </form>
+  <p>
+    Note that the form itself is nit visible
+  </p>
+  
+</body>
+</html>
+
+<!--RADIO BUTTONS-->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2> Radio Buttons</h2>
+  <p> choose your favourite web page</p>
+  <form>
+    <input type="radio" id="html" name="fav_language" value="html">
+    <label for="html">html</label><br>
+    <input type="radio" id="css" name="fav_language" value="css">
+    <label for="css">css</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="javascript">
+    <label for="javascript">javascript</label>
+  </form>
+  
+</body>
+</html>
+
+
+<!--checkbox-->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2>check boxes</h2>
+  <p> the <strong><input type="checkbox"></strong>defines a check box</p>
+  <form action="/action_page.php">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="bike"> 
+    <label for="vehicle1">I have a Bike</label><br>
+    <input type="checkbox"id="vehicle2" name="vehicle2" value="car">
+    <label for="vechicle2"> i have a car</label><br><br>
+    <input type="submit" value="submit">
+    </form>
+  
+</body>
+</html>
+
+
+<!--html target attributes-->
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2>Target attributes</h2>
+  <p> when submit the form the result will be opened in a new browser:</p>
+  <form action="/action_page.php" target="blank">
+    <label for="fname">first name:</label><br>
+    <input type="text" id="frame" name="frame" value="john"><br>
+    <label for="lname">lastname: </label><br>
+    <input type="text" id="lname" name="lname" value="smith"><br>
+    <input type="submit" value="submit">
+  </form>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <form action="home.html">
+    first name:<br>
+    <input type="text" name="first_name">
+  </br>
+    last name:<br>
+    <input type="text" name="last_name">
+</br>
+    email :<br>
+    <input type="text" name="email">
+</br>
+  <input type="submit" name="submit">
+  </form>
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <textarea rows="5" cols="30">Enter message</textarea>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+<select name="course">
+  <option value="python">Python</option>
+  <option value="sql">SQL</option>
+  <option value="html">HTML</option>
+</select>
+
+  
+</body>
+</html>

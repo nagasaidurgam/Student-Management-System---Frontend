@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popular Legends</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WELCOME SCREEN -->
+<div id="welcome" class="screen active">
+  <h1>Welcome to Popular Legends</h1>
+  <p>Explore legendary scientists and test your knowledge</p>
+
+  <ul>
+    <li>Famous Scientists</li>
+    <li>Interactive Quiz for famous legands</li>
+    <li>Instant feedback</li>
+    <li>Fun Learning</li>
+  </ul>
+
+  <button onclick="startGame()">Click here to start the game</button>
+</div>
+
+<!-- SCIENTIST GRID + QUIZ -->
+<div id="scientists" class="screen">
+  <h2>Select a Scientist</h2>
+
+  <div class="layout">
+    <div class="grid" id="grid"></div>
+
+    <div id="quizBox">
+      <img id="quizImage">
+      <h3>What is the scientist name?</h3>
+      <div id="options"></div>
+      <button onclick="submitAnswer()">Submit</button>
+      <button onclick="nextScientist()">Next</button>
+    </div>
+  </div>
+</div>
+
+<div id="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
